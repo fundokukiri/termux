@@ -20,3 +20,13 @@ chmod +x chmod +x install-nethunter-termux
 ```
 ./install-nethunter-termux
 ```
+
+## Split
+```
+split -b 50M -d termux-backup.tar.gz termux-backup.tar.gz.part
+```
+
+## Merge
+```
+cat termux-backup.tar.gz.part* > termux-backup.tar.gz
+```
