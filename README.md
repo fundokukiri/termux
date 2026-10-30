@@ -1,6 +1,6 @@
 # Termux Backup & Restore
 
-Hướng dẫn backup, restore và cài đặt NetHunter cho Termux.
+Guide for backup, restore, and NetHunter installation on Termux.
 
 ## Backup
 
@@ -22,13 +22,13 @@ chmod +x install-nethunter-termux
 ./install-nethunter-termux
 ```
 
-## Chia nhỏ file backup (Split)
+## Split Backup File
 
 ```bash
 split -b 50M -d termux-backup.tar.gz termux-backup.tar.gz.part
 ```
 
-## Gộp file backup (Merge)
+## Merge Backup File
 
 ```bash
 cat termux-backup.tar.gz.part* > termux-backup.tar.gz
